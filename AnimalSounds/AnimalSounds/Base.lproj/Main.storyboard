@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="VMb-AO-HAe">
+                                <rect key="frame" x="82.5" y="302" width="249" height="292.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-9u-X4Q">
+                                        <rect key="frame" x="60" y="0.0" width="129" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="E2h-pD-3Hl">
+                                        <rect key="frame" x="0.0" y="40.5" width="249" height="98"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="tlH-J4-kw7">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXI-ei-wxn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐱"/>
+                                                        <connections>
+                                                            <action selector="catButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDW-nU-eOq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVT-Qo-Lbb">
+                                                        <rect key="frame" x="86" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐰"/>
+                                                        <connections>
+                                                            <action selector="rabButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WzS-1e-aWo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxc-FP-mGY">
+                                                        <rect key="frame" x="172" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐶"/>
+                                                        <connections>
+                                                            <action selector="dogButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEw-PX-bcm"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nWx-pC-n53">
+                                        <rect key="frame" x="0.0" y="157.5" width="249" height="98"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="4PH-BH-VRi">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="98"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytd-kt-fHy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐧"/>
+                                                        <connections>
+                                                            <action selector="catButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSp-JI-wTM"/>
+                                                            <action selector="pengButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRE-tG-LdE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUh-LH-Wtg">
+                                                        <rect key="frame" x="86" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐻"/>
+                                                        <connections>
+                                                            <action selector="bearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k20-SX-jo4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLO-Jc-Ib2">
+                                                        <rect key="frame" x="172" y="0.0" width="77" height="98"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                        <state key="normal" title="🐤"/>
+                                                        <connections>
+                                                            <action selector="chickButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VqX-5c-fzE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap an animal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-ff-i3L">
+                                        <rect key="frame" x="77.5" y="274.5" width="94" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VMb-AO-HAe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HR6-nI-kSz"/>
+                            <constraint firstItem="VMb-AO-HAe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W1b-g7-tjs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalSoundLabel" destination="bgN-9u-X4Q" id="MM9-jU-mPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="72.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
